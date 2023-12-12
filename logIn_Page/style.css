@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Work+Sans:ital,wght@0,300;0,500;0,600;1,300&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+body{
+    background-image: url(Images/layered-waves-haikei\(1\).svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+
+.flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 100%;
+}
+
+.flexRight{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    
+    height: 100%;
+}
+
+.flexLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    
+    height: 100%;
+}
+.spacing{
+    padding: 60px;
+}
+
+/*=============Main content============*/
+
+main{
+    height: 200px;
+    width: 300px;
+   background-color: #01192b31;
+   border-radius: 5%;
+    margin-right: 300px;
+
+    width: 42rem;
+    height: 47rem;
+
+    
+    
+}
+
+.welcomeText{
+    color:aliceblue;
+    
+    font-size: 120px;
+    font-weight: 600px;
+
+    padding-top: 150px;
+    margin-left: -50px;
+
+    user-select: none;
+}
+
+
+/*================Form==================*/
+
+
+#name, #pass{
+    height: 20px;
+
+    height: 50px;
+    width: 60%;
+
+    border-radius: 5%;
+
+    margin-left: -80px;
+
+    font-style: italic;
+
+    user-select: none;
+
+}
+
+.label{
+    color: white;
+    align-self: flex-start;
+    padding-left: 100px;
+    font-size: 25px;
+    
+}
+
+form{
+    margin-top: 100px;
+    row-gap: 10px;
+
+    margin-left: -60px;
+}
+
+button{
+    margin-top: 20px;
+
+    width: 190px;
+    height: 46px;
+    font-size: 20px;
+
+    border: none;
+    border-radius: 5%;
+
+    background-color: #01192b;
+    color: white;
+
+    margin-left: -327px
+
+    
+}
+
+button:hover{
+    cursor:pointer;
+    background:#03253f;
+}
+
+button:active{
+    cursor:pointer;
+    background:#163349;
+}
+
+/*=================Mobile====================*/
+@media only screen and (max-width: 1300px){
+    body{
+        background-image: url(Images/layered-waves-haikei.svg);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .flexLeft{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /*========MAIN=========*/
+
+    .welcomeText{
+        color:aliceblue;
+        
+        font-size: 120px;
+        font-weight: 600px;
+    
+        padding-top: 0px;
+        margin-left: 10px;
+    }
+    
+
+    /*========FROM=========*/
+    #name, #pass{
+        height: 20px;
+    
+        height: 50px;
+        width: 60%;
+    
+        border-radius: 5%;
+    
+        margin-left: 0px;
+    
+    
+    }
+    
+    .label{
+        color: white;
+        align-self: flex-start;
+        padding-left: 110px;
+        
+        
+
+    }
+    
+    form{
+        margin-top: 100px;
+        row-gap: 10px;
+    
+        margin-left: 0px;
+    }
+    
+    button{
+        margin-top: 20px;
+    
+        width: 190px;
+        height: 46px;
+        font-size: 20px;
+    
+        border: none;
+        border-radius: 5%;
+    
+        background-color: #01192b;
+        color: white;
+    
+        margin-left: 0px
+    
+        
+    }
+}
